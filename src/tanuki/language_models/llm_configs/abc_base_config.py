@@ -1,6 +1,8 @@
 import abc 
 from pydantic import BaseModel#, ConfigDict
 from typing import Optional
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning)
 
 class BaseModelConfig(abc.ABC, BaseModel):
     """
